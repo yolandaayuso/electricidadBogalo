@@ -1223,11 +1223,11 @@ h2.fade-in-up i {
     letter-spacing: 0.2em; /* Aumenta el espaciado entre letras */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2); /* Sombras para profundidad */
     font-weight: bold; /* Hace que el texto sea más fuerte */
-}
-/* S/* Sección de Proyectos */
+}/* Sección de Proyectos */
+/* Sección de Proyectos */
 .proyectos {
     text-align: center;
-    padding: 3rem;
+    padding: 2rem 1rem; /* Reduce el padding en los laterales */
     background-color: #fff;
 }
 
@@ -1240,7 +1240,9 @@ h2.fade-in-up i {
 /* Contenedor del carrusel */
 .carousel-container-proyectos {
     overflow: hidden;
+    width: 98%; /* Aumenta el ancho para ocupar casi toda la pantalla */
     margin: auto;
+    padding: 2rem 0;
     position: relative;
 }
 
@@ -1248,25 +1250,30 @@ h2.fade-in-up i {
 .carousel-proyectos {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 2rem;
+    gap: 1rem; /* Reduce el espacio entre las tarjetas */
 }
 
+/* Configuración de las tarjetas */
 .project-card {
-    background-color: #7a93b2;
+    background-color: #f8f9fa;
     border-radius: 15px;
-    width: 300px;
-    padding: 2%;
+    width: 280px; /* Ajusta el ancho de las tarjetas */
+    height: 350px; /* Define una altura uniforme para todas las tarjetas */
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
-    color: #fff;
+    color: #033254;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 .project-card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .project-card h3 {
@@ -1274,59 +1281,9 @@ h2.fade-in-up i {
     font-size: 1.2rem;
     font-weight: bold;
     color: #033254;
+    flex-grow: 1; /* Permite que el título ocupe el espacio disponible si es necesario */
 }
 
-.project-card p {
-    margin: 0.5rem 0 1rem;
-    font-size: 1rem;
-    color: #eee;
-}
-
-.project-card i {
-    color: #e63946;
-    margin-right: 0.3rem;
-}
-/* Ajustes para el contenedor Swiper */
-.carousel-container-proyectos {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    padding: 2rem 0;
-}
-
-/* Configuración de las tarjetas */
-.project-card {
-    background-color: #e5e8eb;
-    border-radius: 15px;
-    width: auto;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    color: #033254;
-    overflow: hidden;
-}
-
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.project-card h3 {
-    margin: 1rem 0 0.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.project-card p {
-    margin: 0.5rem 0 1rem;
-    font-size: 1rem;
-    color: #033254;
-}
-
-.project-card i {
-    color: #e63946;
-    margin-right: 0.3rem;
-}
 .proyectos p {
     font-size: 1.2rem;
     color: #555;
@@ -1335,4 +1292,19 @@ h2.fade-in-up i {
     line-height: 1.6;
     text-align: center;
     padding: 1rem;
+}
+/* Icono de ubicación */
+.project-card i {
+    color: #e63946;
+    margin-right: 0.3rem;
+}
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Ocupa el ancho completo de la pantalla en dispositivos pequeños */
+        height: auto; /* Ajusta la altura para evitar cortes */
+    }
+    
+    .carousel-container-proyectos {
+        width: 100%; /* Ocupa el ancho completo de la pantalla */
+    }
 }
