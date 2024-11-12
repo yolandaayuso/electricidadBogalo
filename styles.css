@@ -583,7 +583,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -1225,63 +1225,19 @@ h2.fade-in-up i {
     font-weight: bold; /* Hace que el texto sea más fuerte */
 }/* Sección de Proyectos */
 /* Sección de Proyectos */
+/* Estilo para la sección de Proyectos Realizados */
+/* Estilo para la sección de Proyectos Realizados */
 .proyectos {
     text-align: center;
-    padding: 2rem 1rem; /* Reduce el padding en los laterales */
-    background-color: #fff;
+    padding: 2rem 1rem;
+    background-color: #f7f9fc; /* Fondo más suave */
 }
 
 .proyectos h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 1.5rem;
-}
-
-/* Contenedor del carrusel */
-.carousel-container-proyectos {
-    overflow: hidden;
-    width: 98%; /* Aumenta el ancho para ocupar casi toda la pantalla */
-    margin: auto;
-    padding: 2rem 0;
-    position: relative;
-}
-
-/* Carrusel y tarjetas de proyecto */
-.carousel-proyectos {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 1rem; /* Reduce el espacio entre las tarjetas */
-}
-
-/* Configuración de las tarjetas */
-.project-card {
-    background-color: #f8f9fa;
-    border-radius: 15px;
-    width: 280px; /* Ajusta el ancho de las tarjetas */
-    height: 350px; /* Define una altura uniforme para todas las tarjetas */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    color: #033254;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.project-card h3 {
-    margin: 1rem 0 0.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #033254;
-    flex-grow: 1; /* Permite que el título ocupe el espacio disponible si es necesario */
+    font-weight: 600;
 }
 
 .proyectos p {
@@ -1293,18 +1249,103 @@ h2.fade-in-up i {
     text-align: center;
     padding: 1rem;
 }
+
+/* Contenedor del carrusel */
+.carousel-container-proyectos {
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: relative;
+}
+
+/* Configuración de las tarjetas */
+.project-card {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 20px; /* Bordes más redondeados */
+    width: 100%;
+    max-width: 300px; /* Todas las tarjetas con un ancho máximo igual */
+    height: 100%; /* Ocupa toda la altura del contenedor del slider */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Sombra más sutil y difusa */
+    color: #033254;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem; /* Espaciado interior cómodo */
+    box-sizing: border-box;
+    margin: 0 auto; /* Centra la tarjeta */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animación para el hover */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Efecto de elevar al pasar el mouse */
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.15); /* Sombra más profunda al hacer hover */
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px; /* Tamaño fijo para todas las imágenes */
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover img {
+    transform: scale(1.05); /* Ligeramente más grande al hacer hover */
+}
+
+/* Contenedor del contenido (h3 y p) */
+.project-card .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.project-card h3 {
+    margin-top:1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #033254;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: auto; /* Empuja el párrafo hacia la parte inferior */
+    line-height: 1.6;
+}
+
 /* Icono de ubicación */
 .project-card i {
     color: #e63946;
     margin-right: 0.3rem;
+    font-size: 1.2rem; /* Tamaño adecuado para íconos */
 }
+
+/* Ajuste del espacio entre las tarjetas */
+.slick-slide {
+    margin: 0 10px; /* Añade un margen entre cada tarjeta */
+}
+
+.slick-list {
+    margin: 0 -10px; /* Compensa el margen de las tarjetas para mantener la alineación */
+}
+
+/* Responsividad: Ajustes en pantallas pequeñas */
 @media (max-width: 768px) {
     .project-card {
-        width: 100%; /* Ocupa el ancho completo de la pantalla en dispositivos pequeños */
-        height: auto; /* Ajusta la altura para evitar cortes */
+        max-width: 100%; /* Ocupa todo el ancho posible */
+        height: auto; /* Ajusta la altura según el contenido */
     }
     
     .carousel-container-proyectos {
         width: 100%; /* Ocupa el ancho completo de la pantalla */
+        padding: 1rem 0;
     }
 }
