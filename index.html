@@ -20,6 +20,13 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         
+<!-- Enlazar CSS de Slick -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+        <!-- Enlazar jQuery (necesario para Slick) y Slick JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
         <!-- LocalBusiness Schema -->
         <script type="application/ld+json">
@@ -147,92 +154,108 @@
         </div>
     </section>
 
-     <!-- Sección de Proyectos Realizados -->
-     <section id="proyectos" class="proyectos">
+    
+    <!-- Sección de Proyectos Realizados -->
+    <section id="proyectos" class="proyectos">
         <h2>Últimos Proyectos Realizados</h2>
         <p>Hemos realizado numerosos proyectos en localidades como Villanueva de los Infantes, Cózar, Valdepeñas, Villamanrique, Carrizosa, Villahermosa, entre otros. A continuación, mostramos nuestros últimos proyectos:</p>
-        <div class="swiper-container carousel-container-proyectos">
-            <div class="swiper-wrapper carousel-proyectos">
-                <div class="swiper-slide project-card">
-                    <img src="proyecto1.jpeg" alt="Proyecto 1">
-                    <h3>Instalación de 30 paneles solares de 565W para bombeo solar</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
-                </div>
-                <div class="swiper-slide project-card">
-                    <img src="proyecto2.jpeg" alt="Proyecto 2">
-                    <h3>Realización de inspección y mantenimiento en planta fotovoltaica</h3>
-                    <p><i class="fas fa-map-marker-alt"></i>Vva de los Infantes</p>
-                </div>
-                <div class="swiper-slide project-card">
-                    <img src="p4.jpeg" alt="Proyecto 3">
-                    <h3>Instalación de cargador para vehículos eléctricos en vivienda</h3>
-                    <p><i class="fas fa-map-marker-alt"></i>Vva de los Infantes</p>
-                </div>
-                <div class="swiper-slide project-card">
-                    <img src="p6.jpeg" alt="Proyecto 6">
-                    <h3>Montaje integral de electricidad y alumbrado en vivienda</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Villamanrique</p>
-                </div>
-    
-                <div class="swiper-slide project-card">
-                    <img src="p31.jpeg" alt="Proyecto 5">
-                    <h3>Instalación de termostato Wifi inteligente con control remoto desde el móvil</h3>
-
-                    <p><i class="fas fa-map-marker-alt"></i> Vva de Los Infantes</p>
-                </div>
-          
-                <div class="swiper-slide project-card">
-                    <img src="p7.jpeg" alt="Proyecto 7">
-                    <h3>Instalación solar para autoconsumo en vivienda unifamiliar de 6kW</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
-                </div>
-                <div class="swiper-slide project-card">
-                    <img src="p8.jpeg" alt="Proyecto 8">
-                    <h3>Renovación de Iluminación en campo de fútbol para mayor eficiencia energética</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
-                </div>
-                <div class="swiper-slide project-card">
-                    <img src="p41.jpeg" alt="Proyecto 4">
-                    <h3>Instalación de caja de ventilación de gases con un motor de 3CV</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Vva de Los Infantes</p>
-                </div>
+        <div class="carousel-container-proyectos">
+            <div class="project-card">
+                <img src="proyecto1.jpeg" alt="Proyecto 1">
+                <h3>Instalación de 30 paneles solares de 565W para bombeo solar</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
+            </div>
+            <div class="project-card">
+                <img src="proyecto2.jpeg" alt="Proyecto 2">
+                <h3>Realización de inspección y mantenimiento en planta fotovoltaica</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
+            </div>
+            <div class="project-card">
+                <img src="p4.jpeg" alt="Proyecto 3">
+                <h3>Instalación de cargador para vehículos eléctricos en vivienda</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
+            </div>
+            <div class="project-card">
+                <img src="p6.jpeg" alt="Proyecto 4">
+                <h3>Instalación completa de sistema eléctrico y alumbrado para una vivienda unifamiliar</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Villamanrique</p>
+            </div>
+            <div class="project-card">
+                <img src="p31.jpeg" alt="Proyecto 5">
+                <h3>Instalación de termostato Wifi inteligente con control remoto desde el móvil</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
+            </div>
+            <div class="project-card">
+                <img src="p7.jpeg" alt="Proyecto 6">
+                <h3>Instalación solar para autoconsumo en vivienda unifamiliar de 6kW</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
+            </div>
+            <div class="project-card">
+                <img src="p8.jpeg" alt="Proyecto 7">
+                <h3>Renovación de Iluminación en campo de fútbol para mayor eficiencia energética</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
+            </div>
+            <div class="project-card">
+                <img src="p41.jpeg" alt="Proyecto 8">
+                <h3>Instalación de caja de ventilación de gases con un motor de 3CV en ITV</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
             </div>
         </div>
     </section>
 
- <!-- JavaScript para inicializar Swiper -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto', // Ajuste automático de tarjetas visibles
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
+    <!-- Enlazar jQuery (necesario para Slick Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Enlazar JS de Slick Carousel -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- JavaScript para inicializar Slick Carousel -->
+    <script>
+$(document).ready(function(){
+    $('.carousel-container-proyectos').slick({
+        slidesToShow: 3, // Mostrar múltiples tarjetas en pantallas grandes
+        slidesToScroll: 1, // Desplazarse de una tarjeta en una
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: true,
+        dots: false, // Elimina los puntos de navegación
+        infinite: true, // Habilita el desplazamiento continuo sin fin
+        centerMode: false, // Desactiva el modo centrado en pantallas grandes
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    infinite: true // Permite que el carrusel sea infinito en móviles también
+                }
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                    infinite: true,
+                }
             },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-                1280: {
-                    slidesPerView: 4,
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                    infinite: true,
                 }
             }
-        });
+        ]
     });
-</script>
+});
 
+
+
+    </script>
 <!-- Sección de ¿Quiénes somos? -->
 <section id="quienes-somos" class="quienes-somos">
     <div class="quienes-somos-container">
