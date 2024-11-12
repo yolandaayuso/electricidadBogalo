@@ -177,7 +177,7 @@
             </div>
             <div class="project-card">
                 <img src="p6.jpeg" alt="Proyecto 4">
-                <h3>Instalación completa de sistema eléctrico y alumbrado para una vivienda unifamiliar</h3>
+                <h3>Instalación completa de sistema eléctrico y alumbrado en vivienda unifamiliar</h3>
                 <p><i class="fas fa-map-marker-alt"></i> Villamanrique</p>
             </div>
             <div class="project-card">
@@ -213,40 +213,36 @@
 $(document).ready(function(){
     $('.carousel-container-proyectos').slick({
         slidesToShow: 3, // Mostrar múltiples tarjetas en pantallas grandes
-        slidesToScroll: 1, // Desplazarse de una tarjeta en una
+        slidesToScroll: 3, // Desplazarse de a 3 tarjetas completas para evitar cortes
         autoplay: true,
         autoplaySpeed: 4000,
         arrows: true,
         dots: false, // Elimina los puntos de navegación
-        infinite: true, // Habilita el desplazamiento continuo sin fin
-        centerMode: false, // Desactiva el modo centrado en pantallas grandes
+        infinite: false, // Desactiva el desplazamiento continuo para evitar tarjetas cortadas
+        variableWidth: false, // Asegura que las tarjetas tengan un ancho fijo y no se corten
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    infinite: true // Permite que el carrusel sea infinito en móviles también
+                    infinite: false, // Permite que el carrusel no sea infinito en móviles
                 }
             },
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1,
-                    centerMode: false,
-                    infinite: true,
+                    slidesToScroll: 2,
+                    infinite: false,
                 }
             },
             {
                 breakpoint: 1280,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 1,
-                    centerMode: false,
-                    infinite: true,
+                    slidesToScroll: 3,
+                    infinite: false,
                 }
             }
         ]
