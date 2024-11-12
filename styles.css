@@ -1230,7 +1230,7 @@ h2.fade-in-up i {
 .proyectos {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: #f7f9fc; /* Fondo más suave */
+    background-color: #ffffff; /* Fondo más suave */
 }
 
 .proyectos h2 {
@@ -1256,11 +1256,12 @@ h2.fade-in-up i {
     margin: 0 auto;
     padding: 2rem 0;
     position: relative;
+    background-color: #ffffff; /* Fondo blanco */
 }
 
 /* Configuración de las tarjetas */
 .project-card {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #f8f9fa; /* Fondo blanco */
     border-radius: 20px; /* Bordes más redondeados */
     width: 100%;
     max-width: 300px; /* Todas las tarjetas con un ancho máximo igual */
