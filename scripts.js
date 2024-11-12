@@ -90,3 +90,13 @@ document.addEventListener("DOMContentLoaded", function() {
         appearOnScroll.observe(fader);
     });
 });
+// Inicializar el mapa centrado en Ciudad Real
+const map = L.map('map').setView([38.75, -3.1], 9);
+
+// Cambiar la capa base a CartoDB Positron
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+}).addTo(map);
+
+

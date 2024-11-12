@@ -11,7 +11,7 @@ body {
 
 /* Barra Superior de Contacto */
 .top-bar {
-    background-color: #58C3B2;
+    background-color: #4ba3e2;
     color: #fff;
     padding: 0.5rem;
     text-align: center;
@@ -45,11 +45,7 @@ body {
     margin-right: 0.5rem;
 }
 
-.navbar-logo h1 {
-    font-size: 1.2rem;
-    color: #58C3B2;
-    font-weight: bold;
-}
+
 
 .navbar-menu {
     display: flex;
@@ -68,11 +64,11 @@ body {
 }
 
 .navbar-menu a:hover {
-    color: #58C3B2;
+    color: #4ba3e2;
 }
 
 .cta-button {
-    background-color: #58C3B2;
+    background-color: #4ba3e2;
     padding: 0.5rem 1rem;
     color: #fff;
     border-radius: 4px;
@@ -135,8 +131,8 @@ body {
 }
 
 .carousel-cta:hover {
-    background-color: #58C3B2;
-    border-color: #58C3B2;
+    background-color: #4ba3e2;
+    border-color: #4ba3e2;
 }
 
 .carousel-btn {
@@ -177,8 +173,13 @@ body {
 }
 
 .servicios p {
-    color: #666;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+    text-align: center;
+    padding: 1rem;
 }
 
 .servicios-grid {
@@ -198,7 +199,7 @@ body {
 
 .servicio-card i {
     font-size: 3rem;
-    color: #58C3B2;
+    color: #4ba3e2;
     margin-bottom: 1rem;
 }
 
@@ -253,7 +254,7 @@ body {
 
 .servicio-card i {
     font-size: 3rem;
-    color: #58C3B2;
+    color: #4ba3e2;
     margin-bottom: 1rem;
 }
 
@@ -379,8 +380,8 @@ body {
     display: inline-block;
     margin-top: 2rem;
     padding: 0.5rem 1.5rem;
-    color: #58C3B2;
-    border: 2px solid #58C3B2;
+    color: #4ba3e2;
+    border: 2px solid #4ba3e2;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -388,7 +389,7 @@ body {
 }
 
 .valoracion-btn:hover {
-    background-color: #58C3B2;
+    background-color: #4ba3e2;
     color: #fff;
 
 }
@@ -479,7 +480,7 @@ body {
 
 .contacto-item i {
     font-size: 2rem;
-    color: #58C3B2;
+    color: #4ba3e2;
     margin-bottom: 0.5rem;
 }
 
@@ -496,7 +497,7 @@ body {
 }
 
 .contacto-item a {
-    color: #58C3B2;
+    color: #4ba3e2;
     text-decoration: none;
 }
 
@@ -515,8 +516,7 @@ body {
     .contacto-container {
         grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
     }
-}
-/* Sección de Ubicación */
+}/* Sección de Ubicación */
 .ubicacion {
     padding: 2rem 1rem;
     text-align: center;
@@ -530,12 +530,20 @@ body {
 }
 
 .map-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    height: 600px; /* Ajusta la altura según prefieras */
+    margin: 0;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.map-container iframe {
+    width: 100%;
+    height: 100%; /* Asegura que el mapa ocupe todo el contenedor */
+    border: 0;
+}
+
 /* Footer Simplificado */
 .footer {
     background-color: #333;
@@ -551,7 +559,7 @@ body {
 }
 
 .footer-content a {
-    color: #58C3B2;
+    color: #4ba3e2;
     text-decoration: none;
 }
 
@@ -623,18 +631,7 @@ body {
         text-align: center;
     }
 }
-/* Sección de Servicios Personalizados */
-.personalized-section {
-    position: relative;
-    background-image: url('background-energy.jpg'); /* Reemplaza con una imagen de fondo adecuada, como paneles solares o instalaciones eléctricas */
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
+
 
 .personalized-section .overlay {
     position: absolute;
@@ -698,7 +695,7 @@ body {
     display: inline-block;
     margin: 0 0.5rem;
     font-size: 1.5rem;
-    color: #58C3B2; /* Color principal de los iconos */
+    color: #4ba3e2; /* Color principal de los iconos */
     transition: color 0.3s;
 }
 
@@ -758,7 +755,7 @@ body {
 .valoracion-btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #58C3B2;
+    background-color: #4ba3e2;
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
@@ -782,11 +779,11 @@ body {
 
 /* Barra Superior de Contacto */
 .top-bar {
-    background-color: #58C3B2;
+    background-color: #4ba3e2;
     color: #fff;
     padding: 0.5rem;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
 }
 
 .top-bar p {
@@ -828,7 +825,7 @@ body {
 
 .navbar-logo h1 {
     font-size: 1.5rem;
-    color: #58C3B2;
+    color: #4ba3e2;
     font-weight: bold;
     transition: font-size 0.3s ease;
 }
@@ -854,7 +851,7 @@ body {
 }
 
 .navbar-menu a:hover {
-    color: #58C3B2;
+    color: #4ba3e2;
 }
 
 /* Carrusel */
@@ -910,8 +907,8 @@ body {
 }
 
 .carousel-cta:hover {
-    background-color: #58C3B2;
-    border-color: #58C3B2;
+    background-color: #4ba3e2;
+    border-color: #4ba3e2;
 }
 
 .carousel-btn {
@@ -951,7 +948,7 @@ body {
 
 /* Barra Superior de Contacto */
 .top-bar {
-    background-color: #58C3B2;
+    background-color: #4ba3e2;
     color: #fff;
     padding: 0.5rem;
     text-align: center;
@@ -991,7 +988,7 @@ body {
 
 .navbar-logo h1 {
     font-size: 1.2rem;
-    color: #58C3B2;
+    color: #4ba3e2;
     font-weight: bold;
 }
 
@@ -1011,7 +1008,7 @@ body {
 }
 
 .navbar-menu .cta-button {
-    background-color: #58C3B2;
+    background-color: #4ba3e2;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -1020,13 +1017,13 @@ body {
 
 .navbar-menu a:hover,
 .navbar-menu .cta-button:hover {
-    color: #58C3B2;
+    color: #4ba3e2;
 }
 
 .hamburger {
     display: none;
     font-size: 1.5rem;
-    color: #58C3B2;
+    color: #4ba3e2;
     cursor: pointer;
 }
 
@@ -1051,7 +1048,7 @@ body {
     }
 
     .navbar-menu .cta-button {
-        background-color: #58C3B2;
+        background-color: #4ba3e2;
         width: 100%;
         text-align: center;
         padding: 0.75rem 0;
@@ -1091,12 +1088,18 @@ body {
 
 /* Color de acento */
 .text-accent {
-    color: #58C3B2; /* Cambia este color según el que prefieras */
+    color: #4ba3e2; /* Cambia este color según el que prefieras */
 }
 
 /* Alineación centrada */
 .text-center {
     text-align: center;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
 }
 
 .carousel-slide {
@@ -1109,30 +1112,227 @@ body {
     justify-content: center;
     color: #fff;
     text-align: center;
-    background-size: cover; /* Asegura que la imagen cubra toda el área */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    z-index: 1; /* Asegura que las diapositivas estén por debajo de los botones */
 }
 
 .carousel-slide.active {
     opacity: 1;
 }
+
 .carousel-slide .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 51, 102, 0.5); /* Superposición de color azul */
+    background-color: rgba(0, 51, 102, 0.5);
     z-index: 1;
 }
+
 .carousel-slide h2,
 .carousel-slide p,
-.carousel-slide a.carousel-cta { /* Cambiado de 'button' a 'a.carousel-cta' */
+.carousel-slide a.carousel-cta {
     position: relative;
     z-index: 2;
 }
 
+/* Estilos para los botones de navegación */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3; /* Asegura que los botones estén por encima de las diapositivas y la superposición */
+}
 
+.carousel-btn.prev {
+    left: 1rem;
+}
+
+.carousel-btn.next {
+    right: 1rem;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Estilos para la barra superior de contacto */
+.top-bar {
+    background-color: #333; /* Cambia este color si prefieres otro */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+.top-bar p {
+    margin: 0;
+}
+
+.top-bar i {
+    margin-right: 5px; /* Espaciado entre el icono y el texto */
+}
+.top-bar {
+    background-color: #4ba3e2;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative; /* Cambiado a relative */
+    z-index: 1000;
+}
+h2.fade-in-up i {
+    color: #4ba3e2; /* Cambia este color si deseas otro */
+    margin-right: 0.5rem; /* Espacio entre el ícono y el texto */
+    font-size: 1.5em; /* Tamaño del ícono */
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+    text-align: center;
+    padding: 1rem;
+}
+/* Estilos de encabezado */
+.logo-text {
+    font-family: 'Permanent Marker', sans-serif; /* Cambia a la fuente 'font-atomic' */
+    font-size: 3rem; /* Ajusta el tamaño para hacerlo más grande */
+    color: #4ba3e2;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; /* Aumenta el espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 4px 4px 6px rgba(0, 0, 0, 0.2); /* Sombras para profundidad */
+    font-weight: bold; /* Hace que el texto sea más fuerte */
+}
+/* S/* Sección de Proyectos */
+.proyectos {
+    text-align: center;
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.proyectos h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Contenedor del carrusel */
+.carousel-container-proyectos {
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+/* Carrusel y tarjetas de proyecto */
+.carousel-proyectos {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #7a93b2;
+    border-radius: 15px;
+    width: 300px;
+    padding: 2%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.project-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #033254;
+}
+
+.project-card p {
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+    color: #eee;
+}
+
+.project-card i {
+    color: #e63946;
+    margin-right: 0.3rem;
+}
+/* Ajustes para el contenedor Swiper */
+.carousel-container-proyectos {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* Configuración de las tarjetas */
+.project-card {
+    background-color: #e5e8eb;
+    border-radius: 15px;
+    width: auto;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    color: #033254;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.project-card p {
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+    color: #033254;
+}
+
+.project-card i {
+    color: #e63946;
+    margin-right: 0.3rem;
+}
+.proyectos p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+    text-align: center;
+    padding: 1rem;
+}
