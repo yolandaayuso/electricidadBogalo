@@ -1264,7 +1264,7 @@ h2.fade-in-up i {
     background-color: #f8f9fa; /* Fondo blanco */
     border-radius: 20px; /* Bordes más redondeados */
     width: 100%;
-    max-width: 300px; /* Todas las tarjetas con un ancho máximo igual */
+    max-width: 500px; /* Todas las tarjetas con un ancho máximo igual */
     height: 100%; /* Ocupa toda la altura del contenedor del slider */
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Sombra más sutil y difusa */
     color: #033254;
