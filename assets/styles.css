@@ -1231,6 +1231,7 @@ h2.fade-in-up i {
     text-align: center;
     padding: 2rem 1rem;
     background-color: #ffffff; /* Fondo más suave */
+    height: 100%;
 }
 
 .proyectos h2 {
@@ -1252,11 +1253,12 @@ h2.fade-in-up i {
 
 /* Contenedor del carrusel */
 .carousel-container-proyectos {
-    width: 95%;
+    width: 95%; /* Ajusta el ancho del contenedor */
     margin: 0 auto;
     padding: 2rem 0;
     position: relative;
     background-color: #ffffff; /* Fondo blanco */
+
 }
 
 /* Configuración de las tarjetas */
@@ -1265,7 +1267,7 @@ h2.fade-in-up i {
     border-radius: 20px; /* Bordes más redondeados */
     width: 100%;
     max-width: 500px; /* Todas las tarjetas con un ancho máximo igual */
-    height: 100%; /* Ocupa toda la altura del contenedor del slider */
+    height: 50% !important; /* Ocupa toda la altura del contenedor del slider */
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Sombra más sutil y difusa */
     color: #033254;
     overflow: hidden;
@@ -1276,6 +1278,7 @@ h2.fade-in-up i {
     box-sizing: border-box;
     margin: 0 auto; /* Centra la tarjeta */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animación para el hover */
+
 }
 
 .project-card:hover {
@@ -1335,7 +1338,11 @@ h2.fade-in-up i {
 }
 
 .slick-list {
-    margin: 0 -10px; /* Compensa el margen de las tarjetas para mantener la alineación */
+    margin: 0 10px !important; /* Compensa el margen de las tarjetas para mantener la alineación */
+}
+
+.slick-track {
+    padding: 0.3vw !important;
 }
 
 /* Responsividad: Ajustes en pantallas pequeñas */
