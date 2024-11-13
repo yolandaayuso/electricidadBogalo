@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /temp/
+Disallow: /assets/
 
 Sitemap: https://www.electricidadbogalo.es/sitemap.xml
