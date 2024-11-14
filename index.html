@@ -175,6 +175,11 @@
                 <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
             </div>
             <div class="project-card">
+                <img src="assets/pElectricista.jpeg" alt="Proyecto CPM electricista bogalo" loading="lazy">
+                <h3>Instalación de CPM <span class="parens">(Caja de protección y medida)</span></h3>
+                <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
+            </div>
+            <div class="project-card">
                 <img src="assets/proyecto2.jpeg" alt="Proyecto 2 electricidad bogalo"loading="lazy">
                 <h3>Realización de inspección y mantenimiento en planta fotovoltaica</h3>
                 <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
@@ -209,9 +214,9 @@
                 <h3>Instalación de caja de ventilación de gases con un motor de 3CV en ITV</h3>
                 <p><i class="fas fa-map-marker-alt"></i> Vva de los Infantes</p>
             </div>
-            
+
         </div>
-    
+
     </section>
 
     <!-- Enlazar jQuery (necesario para Slick Carousel) -->
@@ -221,44 +226,49 @@
 
     <!-- JavaScript para inicializar Slick Carousel -->
     <script>
-       $(document).ready(function(){
-            $('.carousel-container-proyectos').slick({
-                slidesToShow: 3, // Mostrar múltiples tarjetas en pantallas grandes
-                slidesToScroll: 3, // Desplazarse de a 3 tarjetas completas para evitar cortes
-                autoplay: true,
-                autoplaySpeed: 4000,
-                arrows: true,
-                dots: false, // Elimina los puntos de navegación
-                infinite: true, // Activa el desplazamiento continuo para evitar huecos blancos
-                variableWidth: false, // Asegura que las tarjetas tengan un ancho fijo y no se corten
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            infinite: true // Permite el carrusel infinito en móviles
-                        }
-                    },
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                            infinite: true // Permite el carrusel infinito en pantallas medianas
-                        }
-                    },
-                    {
-                        breakpoint: 1280,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true // Permite el carrusel infinito en pantallas grandes
-                        }
-                    }
-                ]
-            });
-        });
+$(document).ready(function(){
+    $('.carousel-container-proyectos').slick({
+        slidesToShow: 3, // Mostrar múltiples tarjetas en pantallas grandes
+        slidesToScroll: 1, // Desplazarse de a 1 tarjeta para un mejor control
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: true, // Muestra las flechas de navegación
+        dots: true, // Activa los puntos de navegación
+        infinite: true, // Activa el desplazamiento continuo para evitar huecos blancos
+        variableWidth: false, // Asegura que las tarjetas tengan un ancho fijo y no se corten
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true, // Mostrar dots en pantallas pequeñas
+                    infinite: true // Permite el carrusel infinito en móviles
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true, // Mostrar dots en pantallas medianas
+                    infinite: true // Permite el carrusel infinito en pantallas medianas
+                }
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: true, // Mostrar dots en pantallas grandes
+                    infinite: true // Permite el carrusel infinito en pantallas grandes
+                }
+            }
+        ]
+    });
+});
+
+
 
         </script>
         
@@ -350,5 +360,9 @@
     </footer>
 
     <script src="assets/scripts.js" defer></script>
+    <a href="https://wa.me/34654054705" class="whatsapp-float" target="_blank" title="Chatea con nosotros en WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+</a>
+
 </body>
 </html>
