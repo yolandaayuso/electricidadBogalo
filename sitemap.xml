@@ -6,11 +6,14 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://www.electricidadbogalo.es/</loc>
-  <lastmod>2024-11-13T11:28:34+00:00</lastmod>
+ <lastmod>2024-11-14T10:05:40+00:00</lastmod>
 </url>
 
+<url>
+  <loc>https://www.electricidadbogalo.es/favicon.ico</loc>
+ <lastmod>2024-11-14T10:05:40+00:00</lastmod>
+</url>
 
 </urlset>
